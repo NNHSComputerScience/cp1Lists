@@ -56,5 +56,3 @@
 make = ["Regal", "Wrangler", "Prius", "Altima"]
 
     
-    
-input("\nPress enter to exit.")
