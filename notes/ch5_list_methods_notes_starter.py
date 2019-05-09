@@ -42,5 +42,3 @@ print (row)
 # 8: Insert method
 #   inserts an element at a specific index value
 
-
-input("Press enter to exit.")
