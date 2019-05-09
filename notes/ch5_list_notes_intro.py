@@ -9,32 +9,30 @@
 row = [ ]
 
 
-#list with elements
-row = ["Ford", "Audi", "BMW", "Lexus", "Mercedes", "Jeep"]
-print(row)
+# list with elements
+row = [ "Ford", "Audi", "BMW", "Lexus", "Mercedes", "Jeep"]
 
 # 2: Using len() and in with lists
 # len()
 print(len(row))
 
-
 # in
 if "Audi" in row:
-    print("An Audi is in the row.")
+    print("An Audi is in the row of cars.")
+
 
 # 3: Indexing and slicing
 # indexing
-print("The first car in the list is", row[0], \
-      "and the last car is", row[-1])
+print("The 1st car in the list is", row[0], "and the last car is", row[-1])
 
 # slicing
-print("The cars in the middle of the row are", row[1:-1])
+print("The cars is the middle of the list are", row[1:-1])
+
 
 # 4: Concatenating lists
-new = ["Toyota", "Nissan"]
-row += new
+new_cars = ["Toyota", "Nissan"]
+row += new_cars
 print(row)
-
 
 # LIST MUTABILITY
 #     lists can be changed (mutable)
@@ -44,16 +42,20 @@ print(row)
 row[0] = "Honda"
 print(row)
 # ['Honda', 'Audi', 'BMW', 'Lexus', 'Mercedes', 'Jeep', 'Toyota', 'Nissan']
+#   0        1       2      3        4           5       6         7
 
 # 6: Assigning a new list element by slice
 row[3:5] = ["Chevy", "Tesla"]
 print(row)
 # ['Honda', 'Audi', 'BMW', 'Chevy', 'Tesla', 'Jeep', 'Toyota', 'Nissan']
-#   0        1       2      3        4           5       6         7
+#   0        1       2      3        4        5       6         7
+
 
 #can also replace multiple elements with only 1 element
 row[1:3] = ["Buick"]
 print(row)
+# ['Honda', 'Buick', 'Chevy', 'Tesla', 'Jeep', 'Toyota', 'Nissan']
+#   0        1        2        3        4       5         6
 
 # TRAP
 #row[1:3] = "Buick"
@@ -63,10 +65,15 @@ print(row)
 # 7: Deleting a list element
 del row[0]
 print(row)
+# ['Buick', 'Chevy', 'Tesla', 'Jeep', 'Toyota', 'Nissan']
+#   0        1        2        3        4        5
+
 
 # 8: Deleting a slice
 del row[1:3]
 print(row)
+# ['Buick', 'Jeep', 'Toyota', 'Nissan']
+#   0        1       2         3
 
 # 9: REVIEW CHALLENGE
 # DISPLAYING ELEMENTS FROM MULTIPLE LISTS w/ Headings
@@ -75,6 +82,3 @@ model = ["Regal", "Wrangler", "Prius", "Altima"]
 print("Make\tModel")
 for i in range(len(row)):
     print(row[i], "\t", model[i])
-    
-    
-input("\nPress enter to exit.")
