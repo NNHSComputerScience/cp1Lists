@@ -15,18 +15,20 @@ print(row)
 #row.append("Ford", "Buick")
 #print (row)
 
+
 # 2: Pop method
-#   removes an element by index value from a list and returns it
+#   removes an element *by index value* from a list and returns it
 #   del keyword also removes by index (pop is preferred)
 car = row.pop(1)
 print(car)
 print(row)
 
+
 # 3: Remove method
-#   removes an element from a list
+#   removes an element from a list *by value*
 row.remove("BMW")
 print(row)
- 
+
 # this method removes the first occurance of an element
 row.remove("Ford")
 print(row)
@@ -37,6 +39,7 @@ print(row)
 row.sort()
 print(row)
 
+
 # 5: Reverse method
 #   reverses the order of a list
 row.reverse()
@@ -44,20 +47,24 @@ print(row)
 row.reverse()
 print(row)
 
+
 # 6: Count method
 #   counts the number of occurances of an element
 row.append("Ford")
 print(row)
 print(row.count("Ford"))
 
+
 # 7: Index method
-#   displays the index value of an element
+#   returns the index value of an element
 print(row.index("Lexus"))
+
 
 # 8: Insert method
 #   inserts an element at a specific index value
+# ['Ford', 'Jeep', 'Lexus', 'Mercedes', 'Ford']
+#   0       1       2        3           4
 row.insert(2, "Kia")
 print(row)
-
-
-input("Press enter to exit.")
+# ['Ford', 'Jeep', 'Kia', 'Lexus', 'Mercedes', 'Ford']
+#   0       1       2      3        4           5
