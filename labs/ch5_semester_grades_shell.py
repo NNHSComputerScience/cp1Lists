@@ -47,7 +47,3 @@
 
 # ***** Determine and print breakdown of grades given for class *****
 
-
-
-
-input("Press enter key to exit")
