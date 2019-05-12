@@ -43,10 +43,10 @@ for num in numlist2:
 '''
 numlist3 = [1,2,3,4,5]
 ###incorrect way
-##result = numlist3 + numlist4 
+##result = numlist3 + 6 
 print("\n\nThe correct way...")
 numToAdd = [6]
-result = numlist3 + numlist4
+result = numlist3 + numToAdd
 print("\n\nThe preferred way...")
 numlist3.append(6)
 print(result)
